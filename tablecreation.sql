@@ -1,0 +1,3 @@
+
+CREATE TABLE `users` (\n  `username` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,\n  `userPass` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,\n  PRIMARY KEY (`username`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `events` (\n  `time` datetime NOT NULL,\n  `description` varchar(300) COLLATE utf8mb4_general_ci NOT NULL,\n  `username` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,\n  `eventid` int(11) NOT NULL AUTO_INCREMENT,\n  PRIMARY KEY (`eventid`),\n  KEY `username` (`username`),\n  CONSTRAINT `events_ibfk_1` FOREIGN KEY (`username`) REFERENCES `users` (`username`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

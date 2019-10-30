@@ -1,0 +1,6 @@
+(list-holidays year year)
+(switch-to-buffer "*Holidays*")
+(read-only-mode -1)
+(while (re-search-forward ".+, \\(.+\\) \\(.+\\), .+: \\(.+\\)" nil t)
+  (replace-match "\\1,\\2,\"\\3\""))
+(write-file (format "%d-holidays.csv" year))

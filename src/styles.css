@@ -1,0 +1,128 @@
+table, th, td {border: 1px solid black; 
+    text-align: center;}
+table {border-collapse: separate;}
+td:not(.blank) {background-color:rgb(255,218,185); 
+    font-size: 30px;}
+th {background-color: rgb(128, 0, 0); 
+    font-size: 24pt;
+    color: rgb(255,218,185);}
+input[type="number"]{height: 12px;}
+input[type="submit"] {border: none;
+    color:rgb(128, 0, 0);
+    background-color: rgb(255,218,185);
+    padding: 10px 16px;
+    margin: 4px 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14pt;
+    border: 2px solid black;
+    border-radius: 4px;}
+input[type="password"] {font-size: 24pt;
+    border: 1px solid black;
+    border-radius: 6px;}    
+input[type="file"] {border: none;
+    width: 170px;
+    color:rgb(128, 0, 0);
+    background-color: rgb(255,218,185);
+    padding: 10px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 10pt;
+    border: 2px solid black;
+    border-radius: 4px;}
+input[type="text"]{font-size: 24pt;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 250px;}
+input[type="radio"] {cursor: grabbing;}
+div.border{border: 2px solid rgb(255,218,185);
+    border-radius: 4px;
+    padding: 8px 8px 8px 8px;}
+form {display: inline-block;}
+ul {list-style-type: circle;
+padding: 0px;}
+a.logout {font-size: 16pt;
+float: right;}
+a{font-size: 24pt;}
+label{font-size: 24pt;
+text-align: center;}
+a.right{float: right;}
+label.red{font-size: 24pt;
+text-align: center;
+color:red;}
+h1.login{font-size: 30pt;
+text-align: center;}
+h1.view{font-size: 20pt;
+text-align: center;}
+h2{text-align: center;}
+h3{font-size: 20pt;
+display:inline;}
+h3.underline{text-decoration: underline;
+display:inline;}
+h4{font-size:10pt;
+   text-align:center;
+  }
+.calendar{
+    display: inline-block;
+}
+table#calendar .numbered span {
+    cursor: pointer;
+}
+.hidden {
+    display: none !important;
+}
+.eventForm {
+    float: right;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    padding:1px;
+    text-align: center;
+}
+td li {
+    font-size: 12pt;
+    list-style: none;
+}
+button#signOut{
+    display: absolute;
+    float: right;
+}
+li{
+    cursor: pointer;
+    margin: 1px;
+}
+div#editEventForm{
+    float: right;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    padding:1px;
+    position:absolute;
+}
+div#createEvent{
+    float: right;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    padding:1px;
+    position:absolute;
+}
+div#editEventFormheader{
+    cursor:move;
+    text-align: center;
+    border-bottom-style: dotted;
+}
+div#createEventheader{
+    cursor:move;
+    text-align:center;
+    border-bottom-style: dotted;
+    font-size: 18pt;
+}
+#selectedDate{
+    font-size: 24pt;
+}
+.holiday {
+    color: grey;
+    font-size: 10pt;
+}
